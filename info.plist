@@ -138,6 +138,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7FB08912-FC4F-444E-9767-E6C35AFADF70</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1618E99-074D-451F-96F6-4B51D72DE69D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8509B0F9-5113-4FC2-A48A-25CDC532749B</key>
 		<array>
 			<dict>
@@ -216,6 +229,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>957B93F2-F198-496F-8469-D9E29504ABCA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1618E99-074D-451F-96F6-4B51D72DE69D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9767A255-4055-45F7-A87A-3AA0B35117E1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1618E99-074D-451F-96F6-4B51D72DE69D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9864D6B3-826E-427E-BCCD-F01AF24CECCB</key>
 		<array>
 			<dict>
@@ -282,6 +321,19 @@
 			</dict>
 		</array>
 		<key>C79AB6D7-4EEB-4C0A-B68D-9880FB17B98D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1618E99-074D-451F-96F6-4B51D72DE69D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D1BFB009-98BB-4554-B5C5-A1D66E6945C1</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -398,6 +450,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>EF83E387-9280-4DC8-8CE5-C356A48C877A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1618E99-074D-451F-96F6-4B51D72DE69D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FCD14B77-DCD2-4E29-B96E-0396B4C3A3BC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1618E99-074D-451F-96F6-4B51D72DE69D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>leiguoguo</string>
@@ -415,11 +493,11 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>ss.cmain</string>
+				<string>sc.main</string>
 				<key>subtext</key>
-				<string>ss.cmain [where]</string>
+				<string>sc.main [where]</string>
 				<key>text</key>
-				<string>ss.cmain [where]</string>
+				<string>sc.main [where]</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -453,11 +531,11 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>ss.cdual</string>
+				<string>sc.dual</string>
 				<key>subtext</key>
-				<string>ss.cdual [where]</string>
+				<string>sc.dual [where]</string>
 				<key>text</key>
-				<string>ss.cdual [where]</string>
+				<string>sc.dual [where]</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -488,14 +566,80 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>predefined main full</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>50</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>`</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>ABC862A0-EFB8-4048-9928-0C02C084B90A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>predefined dual full</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>50</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>`</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>C71EEEB4-1D48-4286-85B2-E4AED9A0C9B7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>ss.ccurrent</string>
+				<string>sc</string>
 				<key>subtext</key>
-				<string>ss.ccurrent [where]</string>
+				<string>sc.current [where]</string>
 				<key>text</key>
-				<string>ss.ccurrent [where]</string>
+				<string>sc.current [where]</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -529,11 +673,11 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>ss.cother</string>
+				<string>sc.other</string>
 				<key>subtext</key>
-				<string>ss.cother [where]</string>
+				<string>sc.other [where]</string>
 				<key>text</key>
-				<string>ss.cother [where]</string>
+				<string>sc.other [where]</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -701,83 +845,17 @@
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>predefined main full</string>
+				<string>custom main 0 0 0.8 0.8</string>
 				<key>focusedappvariable</key>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>20</integer>
+				<integer>26</integer>
 				<key>hotmod</key>
 				<integer>262144</integer>
 				<key>hotstring</key>
-				<string>3</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>ABC862A0-EFB8-4048-9928-0C02C084B90A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>predefined dual full</string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>20</integer>
-				<key>hotmod</key>
-				<integer>524288</integer>
-				<key>hotstring</key>
-				<string>3</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>C71EEEB4-1D48-4286-85B2-E4AED9A0C9B7</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>predefined main top</string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>21</integer>
-				<key>hotmod</key>
-				<integer>262144</integer>
-				<key>hotstring</key>
-				<string>4</string>
+				<string>7</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -800,17 +878,17 @@
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>predefined dual top</string>
+				<string>custom dual 0 0 0.8 0.8</string>
 				<key>focusedappvariable</key>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>21</integer>
+				<integer>26</integer>
 				<key>hotmod</key>
 				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>4</string>
+				<string>7</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -822,6 +900,204 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>167F4219-86D2-4CDA-9006-1B8252CAC708</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>custom main 0.05 0.05 0.8 0.8</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>28</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>8</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>6113CF43-DD99-4A73-A811-4B33598080FE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>custom dual 0.05 0.05 0.8 0.8</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>28</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>8</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>8E24ECDC-A8FF-4B35-8AD7-38190931911E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>custom main 0.1 0.1 0.8 0.8</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>53</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>⎋</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>EF83E387-9280-4DC8-8CE5-C356A48C877A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>custom dual 0.1 0.1 0.8 0.8</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>53</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>⎋</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>FCD14B77-DCD2-4E29-B96E-0396B4C3A3BC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>custom main 0.15 0.15 0.8 0.8</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>25</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>9</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>9767A255-4055-45F7-A87A-3AA0B35117E1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>custom dual 0.15 0.15 0.8 0.8</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>25</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>9</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>7FB08912-FC4F-444E-9767-E6C35AFADF70</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -856,17 +1132,17 @@
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>predefined main bottom</string>
+				<string>custom main 0.2 0.2 0.8 0.8</string>
 				<key>focusedappvariable</key>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>23</integer>
+				<integer>29</integer>
 				<key>hotmod</key>
 				<integer>262144</integer>
 				<key>hotstring</key>
-				<string>5</string>
+				<string>0</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -877,7 +1153,7 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>6113CF43-DD99-4A73-A811-4B33598080FE</string>
+			<string>D1BFB009-98BB-4554-B5C5-A1D66E6945C1</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -889,17 +1165,17 @@
 				<key>argument</key>
 				<integer>3</integer>
 				<key>argumenttext</key>
-				<string>predefined dual bottom</string>
+				<string>custom dual 0.2 0.2 0.8 0.8</string>
 				<key>focusedappvariable</key>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>23</integer>
+				<integer>29</integer>
 				<key>hotmod</key>
 				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>5</string>
+				<string>0</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -910,7 +1186,7 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>8E24ECDC-A8FF-4B35-8AD7-38190931911E</string>
+			<string>957B93F2-F198-496F-8469-D9E29504ABCA</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -928,11 +1204,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>22</integer>
+				<integer>20</integer>
 				<key>hotmod</key>
 				<integer>262144</integer>
 				<key>hotstring</key>
-				<string>6</string>
+				<string>3</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -961,11 +1237,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>22</integer>
+				<integer>20</integer>
 				<key>hotmod</key>
 				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>6</string>
+				<string>3</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -994,11 +1270,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>26</integer>
+				<integer>21</integer>
 				<key>hotmod</key>
 				<integer>262144</integer>
 				<key>hotstring</key>
-				<string>7</string>
+				<string>4</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1027,11 +1303,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>26</integer>
+				<integer>21</integer>
 				<key>hotmod</key>
 				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>7</string>
+				<string>4</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1060,11 +1336,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>28</integer>
+				<integer>23</integer>
 				<key>hotmod</key>
 				<integer>262144</integer>
 				<key>hotstring</key>
-				<string>8</string>
+				<string>5</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1093,11 +1369,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>28</integer>
+				<integer>23</integer>
 				<key>hotmod</key>
 				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>8</string>
+				<string>5</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1126,11 +1402,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>25</integer>
+				<integer>22</integer>
 				<key>hotmod</key>
 				<integer>262144</integer>
 				<key>hotstring</key>
-				<string>9</string>
+				<string>6</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1159,11 +1435,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>25</integer>
+				<integer>22</integer>
 				<key>hotmod</key>
 				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>9</string>
+				<string>6</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1252,7 +1528,7 @@
 				<key>items</key>
 				<string>[{"title":"left","arg":"predefined current left","subtitle":"left"},{"title":"right","arg":"predefined current right","subtitle":"right"},{"title":"top","arg":"predefined current top","subtitle":"top"},{"title":"bottom","arg":"predefined current bottom","subtitle":"bottom"},{"title":"full","arg":"predefined current full","subtitle":"full"},{"title":"medium","arg":"predefined current medium","subtitle":"medium"},{"title":"small","arg":"predefined current small","subtitle":"small"},{"title":"tl","arg":"predefined current topleft","subtitle":"tl"},{"title":"tr","arg":"predefined current topright","subtitle":"tr"},{"title":"bl","arg":"predefined current bottomleft","subtitle":"bl"},{"title":"br","arg":"predefined current bottomright","subtitle":"br"}]</string>
 				<key>keyword</key>
-				<string>ss.current</string>
+				<string>ss</string>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>runningsubtext</key>
@@ -1310,219 +1586,261 @@
 		<key>0211A884-618C-4C7E-9987-391A30EDBA76</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>295</real>
 			<key>ypos</key>
-			<real>1970</real>
+			<real>715</real>
 		</dict>
 		<key>167F4219-86D2-4CDA-9006-1B8252CAC708</key>
 		<dict>
 			<key>xpos</key>
-			<real>45</real>
+			<real>50</real>
 			<key>ypos</key>
-			<real>1975</real>
+			<real>720</real>
 		</dict>
 		<key>19E9C923-6BF6-4893-8598-253C0BFD20C5</key>
 		<dict>
 			<key>xpos</key>
-			<real>430</real>
+			<real>475</real>
 			<key>ypos</key>
-			<real>2885</real>
+			<real>1930</real>
 		</dict>
 		<key>34D7608B-1105-470E-8353-62540A4D868D</key>
 		<dict>
 			<key>xpos</key>
-			<real>430</real>
+			<real>475</real>
 			<key>ypos</key>
-			<real>2775</real>
+			<real>1820</real>
 		</dict>
 		<key>421038A7-BBEE-4A58-92E6-919340B4F515</key>
 		<dict>
 			<key>xpos</key>
-			<real>45</real>
+			<real>95</real>
 			<key>ypos</key>
-			<real>2290</real>
+			<real>1450</real>
 		</dict>
 		<key>524729A1-B788-43AA-85F1-8024C7D0FF1A</key>
 		<dict>
 			<key>xpos</key>
-			<real>400</real>
+			<real>445</real>
 			<key>ypos</key>
-			<real>1220</real>
+			<real>265</real>
 		</dict>
 		<key>5E7D058F-7E46-426E-86C1-54603F595EE9</key>
 		<dict>
 			<key>xpos</key>
-			<real>45</real>
+			<real>50</real>
 			<key>ypos</key>
-			<real>1765</real>
+			<real>530</real>
 		</dict>
 		<key>6113CF43-DD99-4A73-A811-4B33598080FE</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>295</real>
 			<key>ypos</key>
-			<real>2075</real>
+			<real>820</real>
 		</dict>
 		<key>6F236A99-FC8E-453F-96BD-72736F43A795</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>295</real>
 			<key>ypos</key>
-			<real>1655</real>
+			<real>420</real>
 		</dict>
 		<key>7AC47F46-B01F-44E9-A8DA-853ECA7FE339</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>295</real>
 			<key>ypos</key>
-			<real>1760</real>
+			<real>525</real>
+		</dict>
+		<key>7FB08912-FC4F-444E-9767-E6C35AFADF70</key>
+		<dict>
+			<key>xpos</key>
+			<real>45</real>
+			<key>ypos</key>
+			<real>1035</real>
 		</dict>
 		<key>8509B0F9-5113-4FC2-A48A-25CDC532749B</key>
 		<dict>
 			<key>xpos</key>
-			<real>430</real>
+			<real>475</real>
 			<key>ypos</key>
-			<real>2995</real>
+			<real>2040</real>
 		</dict>
 		<key>893E3A54-8B75-4261-B82D-8DCE5D84D866</key>
 		<dict>
 			<key>xpos</key>
-			<real>400</real>
+			<real>445</real>
 			<key>ypos</key>
-			<real>995</real>
+			<real>40</real>
 		</dict>
 		<key>8968D5C6-B68F-4F6E-A698-6D726EA93CCB</key>
 		<dict>
 			<key>xpos</key>
-			<real>45</real>
+			<real>95</real>
 			<key>ypos</key>
-			<real>2185</real>
+			<real>1345</real>
 		</dict>
 		<key>89BF2721-FC0E-469F-929E-4286B0E3721A</key>
 		<dict>
 			<key>xpos</key>
-			<real>430</real>
+			<real>475</real>
 			<key>ypos</key>
-			<real>3105</real>
+			<real>2150</real>
 		</dict>
 		<key>8A586429-5545-44F2-AE0D-7C9923FE4D1C</key>
 		<dict>
 			<key>xpos</key>
-			<real>645</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>1370</real>
+			<real>415</real>
 		</dict>
 		<key>8E24ECDC-A8FF-4B35-8AD7-38190931911E</key>
 		<dict>
 			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>825</real>
+		</dict>
+		<key>957B93F2-F198-496F-8469-D9E29504ABCA</key>
+		<dict>
+			<key>xpos</key>
 			<real>45</real>
 			<key>ypos</key>
-			<real>2080</real>
+			<real>1140</real>
+		</dict>
+		<key>9767A255-4055-45F7-A87A-3AA0B35117E1</key>
+		<dict>
+			<key>xpos</key>
+			<real>295</real>
+			<key>ypos</key>
+			<real>1030</real>
 		</dict>
 		<key>9864D6B3-826E-427E-BCCD-F01AF24CECCB</key>
 		<dict>
 			<key>xpos</key>
-			<real>400</real>
+			<real>445</real>
 			<key>ypos</key>
-			<real>1105</real>
+			<real>150</real>
 		</dict>
 		<key>9CECA3DE-6B86-498D-8FA2-513C0CE32A04</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>340</real>
 			<key>ypos</key>
-			<real>2180</real>
+			<real>1340</real>
 		</dict>
 		<key>ABC862A0-EFB8-4048-9928-0C02C084B90A</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>305</real>
 			<key>ypos</key>
-			<real>1865</real>
+			<real>245</real>
 		</dict>
 		<key>BF721A21-10C5-4A39-8077-A873BE29FA9A</key>
 		<dict>
 			<key>xpos</key>
-			<real>45</real>
+			<real>95</real>
 			<key>ypos</key>
-			<real>2400</real>
+			<real>1560</real>
 		</dict>
 		<key>C71EEEB4-1D48-4286-85B2-E4AED9A0C9B7</key>
 		<dict>
 			<key>xpos</key>
-			<real>45</real>
+			<real>60</real>
 			<key>ypos</key>
-			<real>1870</real>
+			<real>250</real>
 		</dict>
 		<key>C79AB6D7-4EEB-4C0A-B68D-9880FB17B98D</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>340</real>
 			<key>ypos</key>
-			<real>2395</real>
+			<real>1555</real>
+		</dict>
+		<key>D1BFB009-98BB-4554-B5C5-A1D66E6945C1</key>
+		<dict>
+			<key>xpos</key>
+			<real>295</real>
+			<key>ypos</key>
+			<real>1135</real>
 		</dict>
 		<key>D293DA41-A699-4621-B5E0-483FD38546F4</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>340</real>
 			<key>ypos</key>
-			<real>2285</real>
+			<real>1445</real>
 		</dict>
 		<key>DA33D09C-F06E-41D1-8C74-0EF9EDF27037</key>
 		<dict>
 			<key>xpos</key>
-			<real>45</real>
+			<real>95</real>
 			<key>ypos</key>
-			<real>2510</real>
+			<real>1670</real>
 		</dict>
 		<key>DBFF386D-360C-4517-AD07-414D51989E15</key>
 		<dict>
 			<key>xpos</key>
-			<real>645</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>1025</real>
+			<real>70</real>
 		</dict>
 		<key>E1491631-76A3-4930-AD7C-C6F11BBDD1AE</key>
 		<dict>
 			<key>xpos</key>
-			<real>400</real>
+			<real>445</real>
 			<key>ypos</key>
-			<real>1340</real>
+			<real>385</real>
 		</dict>
 		<key>E35AE3C4-2B24-4781-BFB8-22FBA085CE08</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>340</real>
 			<key>ypos</key>
-			<real>2505</real>
+			<real>1665</real>
 		</dict>
 		<key>E54F8A3F-3BF1-46C6-BE99-ADECFF97A9BA</key>
 		<dict>
 			<key>xpos</key>
-			<real>645</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>1135</real>
+			<real>180</real>
 		</dict>
 		<key>E5BC7ADB-3E1D-4698-AE92-0A323A772571</key>
 		<dict>
 			<key>xpos</key>
-			<real>45</real>
+			<real>50</real>
 			<key>ypos</key>
-			<real>1660</real>
+			<real>425</real>
 		</dict>
 		<key>EAE71773-4CF2-49F6-B9D9-25BDD03A5A96</key>
 		<dict>
 			<key>xpos</key>
-			<real>645</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>1250</real>
+			<real>295</real>
+		</dict>
+		<key>EF83E387-9280-4DC8-8CE5-C356A48C877A</key>
+		<dict>
+			<key>xpos</key>
+			<real>295</real>
+			<key>ypos</key>
+			<real>925</real>
 		</dict>
 		<key>F1618E99-074D-451F-96F6-4B51D72DE69D</key>
 		<dict>
 			<key>xpos</key>
-			<real>1025</real>
+			<real>1070</real>
 			<key>ypos</key>
-			<real>2075</real>
+			<real>1120</real>
+		</dict>
+		<key>FCD14B77-DCD2-4E29-B96E-0396B4C3A3BC</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>930</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
