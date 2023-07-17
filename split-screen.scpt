@@ -120,6 +120,46 @@ on run args
         set percentY to 0.2
         set percentW to 0.6
         set percentH to 0.6
+    else if positionType as string is equal to "n3.1" then
+        set percentX to 0.0
+        set percentY to 0.0
+        set percentW to 0.8
+        set percentH to 0.8
+    else if positionType as string is equal to "n3.2" then
+        set percentX to 0.1
+        set percentY to 0.1
+        set percentW to 0.8
+        set percentH to 0.8
+    else if positionType as string is equal to "n3.3" then
+        set percentX to 0.2
+        set percentY to 0.2
+        set percentW to 0.8
+        set percentH to 0.8
+    else if positionType as string is equal to "n5.1" then
+        set percentX to 0.0
+        set percentY to 0.0
+        set percentW to 0.7
+        set percentH to 0.7
+    else if positionType as string is equal to "n5.2" then
+        set percentX to 0.075
+        set percentY to 0.075
+        set percentW to 0.7
+        set percentH to 0.7
+    else if positionType as string is equal to "n5.3" then
+        set percentX to 0.15
+        set percentY to 0.15
+        set percentW to 0.7
+        set percentH to 0.7
+    else if positionType as string is equal to "n5.4" then
+        set percentX to 0.225
+        set percentY to 0.225
+        set percentW to 0.7
+        set percentH to 0.7
+    else if positionType as string is equal to "n5.5" then
+        set percentX to 0.3
+        set percentY to 0.3
+        set percentW to 0.7
+        set percentH to 0.7
     end if
 
     if whichScreen as string is equal to "current" then
