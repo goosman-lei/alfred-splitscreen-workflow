@@ -2,9 +2,12 @@ on resizeApp(positionX, positionY, sizeX, sizeY)
   log "resize: x = " & positionX & ", y = " & positionY & ", width = " & sizeX & ", height = " & sizeY
   tell application "System Events"
     tell first application process whose frontmost is true
-        set position of first window whose value of attribute "AXMain" is true to {positionX, positionY}
-        delay 0.2
-        set size of first window whose value of attribute "AXMain" is true to {sizeX, sizeY}
+        tell first window whose value of attribute "AXMain" is true
+            set {position, size} to {{positionX, positionY}, {sizeX, sizeY}}
+        end tell
+        -- set position of first window whose value of attribute "AXMain" is true to {positionX, positionY}
+        -- delay 0.2
+        -- set size of first window whose value of attribute "AXMain" is true to {sizeX, sizeY}
     end tell
     tell first application process whose frontmost is true
         set afterPosition to position of first window whose value of attribute "AXMain" is true
@@ -88,12 +91,12 @@ on run args
     else if positionType as string is equal to "left" then
         set percentX to 0.0
         set percentY to 0.0
-        set percentW to 0.5
+        set percentW to 0.48
         set percentH to 1.0
     else if positionType as string is equal to "right" then
-        set percentX to 0.5
+        set percentX to 0.52
         set percentY to 0.0
-        set percentW to 0.5
+        set percentW to 0.48
         set percentH to 1.0
     else if positionType as string is equal to "top" then
         set percentX to 0.0
@@ -177,7 +180,7 @@ on run args
         tell application "System Events"
             tell first application process whose frontmost is true
                 set currPosition to position of first window whose value of attribute "AXMain" is true
-                if item 1 of currPosition < widthOfMainScreen then
+                if item 1 of currPosition <= widthOfMainScreen then
                     set whichScreen to "dual"
                 else
                     set whichScreen to "main"
