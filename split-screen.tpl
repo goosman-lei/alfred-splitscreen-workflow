@@ -68,61 +68,7 @@ on run args
     set dualScreenY to dualScreenY + heightOfMenubar
 
     -- 计算相对比例
-    if positionType as string is equal to "left" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 0.48, 1.00}
-    else if positionType as string is equal to "right" then
-        set {percentX, percentY, percentW, percentH} to {0.52, 0.00, 0.48, 1.00}
-    else if positionType as string is equal to "top" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 1.00, 0.50}
-    else if positionType as string is equal to "bottom" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.50, 1.00, 0.50}
-    else if positionType as string is equal to "full" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 1.00, 1.00}
-    else if positionType as string is equal to "medium" then
-        set {percentX, percentY, percentW, percentH} to {0.15, 0.10, 0.80, 0.80}
-    else if positionType as string is equal to "small" then
-        set {percentX, percentY, percentW, percentH} to {0.20, 0.20, 0.60, 0.60}
-    else if positionType as string is equal to "4.1" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 50.00, 50.00}
-    else if positionType as string is equal to "4.2" then
-        set {percentX, percentY, percentW, percentH} to {50.00, 0.00, 50.00, 50.00}
-    else if positionType as string is equal to "4.3" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 50.00, 50.00, 50.00}
-    else if positionType as string is equal to "4.4" then
-        set {percentX, percentY, percentW, percentH} to {50.00, 50.00, 50.00, 50.00}
-    else if positionType as string is equal to "3.1" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 80.00, 80.00}
-    else if positionType as string is equal to "3.2" then
-        set {percentX, percentY, percentW, percentH} to {10.00, 10.00, 80.00, 80.00}
-    else if positionType as string is equal to "3.3" then
-        set {percentX, percentY, percentW, percentH} to {20.00, 20.00, 80.00, 80.00}
-    else if positionType as string is equal to "l5.1" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 70.00, 70.00}
-    else if positionType as string is equal to "l5.2" then
-        set {percentX, percentY, percentW, percentH} to {7.50, 7.50, 70.00, 70.00}
-    else if positionType as string is equal to "l5.3" then
-        set {percentX, percentY, percentW, percentH} to {15.00, 15.00, 70.00, 70.00}
-    else if positionType as string is equal to "l5.4" then
-        set {percentX, percentY, percentW, percentH} to {0.23, 0.23, 0.70, 0.70}
-    else if positionType as string is equal to "l5.5" then
-        set {percentX, percentY, percentW, percentH} to {0.30, 0.30, 0.70, 0.70}
-    else if positionType as string is equal to "r3.1" then
-        set {percentX, percentY, percentW, percentH} to {0.20, 0.00, 0.80, 0.80}
-    else if positionType as string is equal to "r3.2" then
-        set {percentX, percentY, percentW, percentH} to {0.10, 0.10, 0.80, 0.80}
-    else if positionType as string is equal to "r3.3" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.20, 0.80, 0.80}
-    else if positionType as string is equal to "r5.1" then
-        set {percentX, percentY, percentW, percentH} to {0.30, 0.00, 0.70, 0.70}
-    else if positionType as string is equal to "r5.2" then
-        set {percentX, percentY, percentW, percentH} to {0.23, 0.07, 0.70, 0.70}
-    else if positionType as string is equal to "r5.3" then
-        set {percentX, percentY, percentW, percentH} to {0.15, 0.15, 0.70, 0.70}
-    else if positionType as string is equal to "r5.4" then
-        set {percentX, percentY, percentW, percentH} to {0.07, 0.23, 0.70, 0.70}
-    else if positionType as string is equal to "r5.5" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.30, 0.70, 0.70}
-    end if
+----TPL_REPLACE_WITH_CONFIG
 
     if whichScreen as string is equal to "current" then
         tell application "System Events"

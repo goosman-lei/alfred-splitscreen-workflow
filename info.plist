@@ -8,7 +8,7 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>19E9C923-6BF6-4893-8598-253C0BFD20C5</key>
+		<key>099BE425-CA4C-4B10-B815-389B897C4F81</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -21,7 +21,20 @@
 				<false/>
 			</dict>
 		</array>
-		<key>34D7608B-1105-470E-8353-62540A4D868D</key>
+		<key>3AD50E70-876B-4EDA-AEF0-65BAF669DE85</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1618E99-074D-451F-96F6-4B51D72DE69D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>43900D53-A6C0-4FE0-A123-9D73D0C340B6</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -86,37 +99,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8509B0F9-5113-4FC2-A48A-25CDC532749B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F1618E99-074D-451F-96F6-4B51D72DE69D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>893E3A54-8B75-4261-B82D-8DCE5D84D866</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>DBFF386D-360C-4517-AD07-414D51989E15</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>89BF2721-FC0E-469F-929E-4286B0E3721A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F1618E99-074D-451F-96F6-4B51D72DE69D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -143,6 +130,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>E54F8A3F-3BF1-46C6-BE99-ADECFF97A9BA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A158C1D0-A374-41C4-A702-0E170193D3B5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1618E99-074D-451F-96F6-4B51D72DE69D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -242,6 +242,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F313644E-9D5D-48D9-BD4C-C0074F8B69B5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C5D8616D-1AD5-4DAC-BFF0-2780F6B4BB39</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>leiguoguo</string>
@@ -259,11 +272,11 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>sc.main</string>
+				<string>cm</string>
 				<key>subtext</key>
-				<string>sc.main [where]</string>
+				<string>cm [x y width height]</string>
 				<key>text</key>
-				<string>sc.main [where]</string>
+				<string>cm [x y width height]</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -297,11 +310,11 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>sc.dual</string>
+				<string>cd</string>
 				<key>subtext</key>
-				<string>sc.dual [where]</string>
+				<string>cd [x y width height]</string>
 				<key>text</key>
-				<string>sc.dual [where]</string>
+				<string>cd [x y width height]</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -335,11 +348,11 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>sc</string>
+				<string>cc</string>
 				<key>subtext</key>
-				<string>sc.current [where]</string>
+				<string>cc [x y width height]</string>
 				<key>text</key>
-				<string>sc.current [where]</string>
+				<string>cc [x y width height]</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -373,11 +386,11 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>sc.other</string>
+				<string>co</string>
 				<key>subtext</key>
-				<string>sc.other [where]</string>
+				<string>co [x y width height]</string>
 				<key>text</key>
-				<string>sc.other [where]</string>
+				<string>co [x y width height]</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -629,124 +642,240 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"left","arg":"predefined main left","subtitle":"left"},{"title":"right","arg":"predefined main right","subtitle":"right"},{"title":"top","arg":"predefined main top","subtitle":"top"},{"title":"bottom","arg":"predefined main bottom","subtitle":"bottom"},{"title":"full","arg":"predefined main full","subtitle":"full"},{"title":"medium","arg":"predefined main medium","subtitle":"medium"},{"title":"small","arg":"predefined main small","subtitle":"small"},{"title":"n4.1","arg":"predefined main topleft","subtitle":"n4.1"},{"title":"n4.2","arg":"predefined main topright","subtitle":"n4.2"},{"title":"n4.3","arg":"predefined main bottomleft","subtitle":"n4.3"},{"title":"n4.4","arg":"predefined main bottomright","subtitle":"n4.4"},{"title":"n3.1","arg":"predefined current n3.1","subtitle":"n3.1"},{"title":"n3.2","arg":"predefined current n3.2","subtitle":"n3.2"},{"title":"n3.3","arg":"predefined current n3.3","subtitle":"n3.3"},{"title":"n5.1","arg":"predefined current n5.1","subtitle":"n5.1"},{"title":"n5.2","arg":"predefined current n5.2","subtitle":"n5.2"},{"title":"n5.3","arg":"predefined current n5.3","subtitle":"n5.3"},{"title":"n5.4","arg":"predefined current n5.4","subtitle":"n5.4"},{"title":"n5.5","arg":"predefined current n5.5","subtitle":"n5.5"}]</string>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
-				<string>ss.main</string>
-				<key>matchmode</key>
+				<string>pc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
 				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string></string>
+				<key>script</key>
+				<string>./split-screen.sh show current {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
-				<string>main</string>
+				<string></string>
 				<key>title</key>
-				<string>main</string>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>34D7608B-1105-470E-8353-62540A4D868D</string>
+			<string>A158C1D0-A374-41C4-A702-0E170193D3B5</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"left","arg":"predefined dual left","subtitle":"left"},{"title":"right","arg":"predefined dual right","subtitle":"right"},{"title":"top","arg":"predefined dual top","subtitle":"top"},{"title":"bottom","arg":"predefined dual bottom","subtitle":"bottom"},{"title":"full","arg":"predefined dual full","subtitle":"full"},{"title":"medium","arg":"predefined dual medium","subtitle":"medium"},{"title":"small","arg":"predefined dual small","subtitle":"small"},{"title":"n4.1","arg":"predefined dual topleft","subtitle":"n4.1"},{"title":"n4.2","arg":"predefined dual topright","subtitle":"n4.2"},{"title":"n4.3","arg":"predefined dual bottomleft","subtitle":"n4.3"},{"title":"n4.4","arg":"predefined dual bottomright","subtitle":"n4.4"},{"title":"n3.1","arg":"predefined current n3.1","subtitle":"n3.1"},{"title":"n3.2","arg":"predefined current n3.2","subtitle":"n3.2"},{"title":"n3.3","arg":"predefined current n3.3","subtitle":"n3.3"},{"title":"n5.1","arg":"predefined current n5.1","subtitle":"n5.1"},{"title":"n5.2","arg":"predefined current n5.2","subtitle":"n5.2"},{"title":"n5.3","arg":"predefined current n5.3","subtitle":"n5.3"},{"title":"n5.4","arg":"predefined current n5.4","subtitle":"n5.4"},{"title":"n5.5","arg":"predefined current n5.5","subtitle":"n5.5"}]</string>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
-				<string>ss.dual</string>
-				<key>matchmode</key>
+				<string>po</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
 				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string></string>
+				<key>script</key>
+				<string>./split-screen.sh show other {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
-				<string>dual</string>
+				<string></string>
 				<key>title</key>
-				<string>dual</string>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>19E9C923-6BF6-4893-8598-253C0BFD20C5</string>
+			<string>3AD50E70-876B-4EDA-AEF0-65BAF669DE85</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"left","arg":"predefined current left","subtitle":"left"},{"title":"right","arg":"predefined current right","subtitle":"right"},{"title":"top","arg":"predefined current top","subtitle":"top"},{"title":"bottom","arg":"predefined current bottom","subtitle":"bottom"},{"title":"full","arg":"predefined current full","subtitle":"full"},{"title":"medium","arg":"predefined current medium","subtitle":"medium"},{"title":"small","arg":"predefined current small","subtitle":"small"},{"title":"n4.1","arg":"predefined current topleft","subtitle":"n4.1"},{"title":"n4.2","arg":"predefined current topright","subtitle":"n4.2"},{"title":"n4.3","arg":"predefined current bottomleft","subtitle":"n4.3"},{"title":"n4.4","arg":"predefined current bottomright","subtitle":"n4.4"},{"title":"n3.1","arg":"predefined current n3.1","subtitle":"n3.1"},{"title":"n3.2","arg":"predefined current n3.2","subtitle":"n3.2"},{"title":"n3.3","arg":"predefined current n3.3","subtitle":"n3.3"},{"title":"n5.1","arg":"predefined current n5.1","subtitle":"n5.1"},{"title":"n5.2","arg":"predefined current n5.2","subtitle":"n5.2"},{"title":"n5.3","arg":"predefined current n5.3","subtitle":"n5.3"},{"title":"n5.4","arg":"predefined current n5.4","subtitle":"n5.4"},{"title":"n5.5","arg":"predefined current n5.5","subtitle":"n5.5"}]</string>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
-				<string>ss</string>
-				<key>matchmode</key>
+				<string>pm</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
 				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./split-screen.sh show main {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
 				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>8509B0F9-5113-4FC2-A48A-25CDC532749B</string>
+			<string>099BE425-CA4C-4B10-B815-389B897C4F81</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"left","arg":"predefined other left","subtitle":"left"},{"title":"right","arg":"predefined other right","subtitle":"right"},{"title":"top","arg":"predefined other top","subtitle":"top"},{"title":"bottom","arg":"predefined other bottom","subtitle":"bottom"},{"title":"full","arg":"predefined other full","subtitle":"full"},{"title":"medium","arg":"predefined other medium","subtitle":"medium"},{"title":"small","arg":"predefined other small","subtitle":"small"},{"title":"n4.1","arg":"predefined other topleft","subtitle":"n4.1"},{"title":"n4.2","arg":"predefined other topright","subtitle":"n4.2"},{"title":"n4.3","arg":"predefined other bottomleft","subtitle":"n4.3"},{"title":"n4.4","arg":"predefined other bottomright","subtitle":"n4.4"},{"title":"n3.1","arg":"predefined other n3.1","subtitle":"n3.1"},{"title":"n3.2","arg":"predefined other n3.2","subtitle":"n3.2"},{"title":"n3.3","arg":"predefined other n3.3","subtitle":"n3.3"},{"title":"n5.1","arg":"predefined other n5.1","subtitle":"n5.1"},{"title":"n5.2","arg":"predefined other n5.2","subtitle":"n5.2"},{"title":"n5.3","arg":"predefined other n5.3","subtitle":"n5.3"},{"title":"n5.4","arg":"predefined other n5.4","subtitle":"n5.4"},{"title":"n5.5","arg":"predefined other n5.5","subtitle":"n5.5"}]</string>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
-				<string>so</string>
-				<key>matchmode</key>
+				<string>pd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
 				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string></string>
+				<key>script</key>
+				<string>./split-screen.sh show dual {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
-				<string>other</string>
+				<string></string>
 				<key>title</key>
-				<string>other</string>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>89BF2721-FC0E-469F-929E-4286B0E3721A</string>
+			<string>43900D53-A6C0-4FE0-A123-9D73D0C340B6</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./split-screen.sh {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C5D8616D-1AD5-4DAC-BFF0-2780F6B4BB39</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>def</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>F313644E-9D5D-48D9-BD4C-C0074F8B69B5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -755,19 +884,26 @@
 	<string>Split focused window in screen</string>
 	<key>uidata</key>
 	<dict>
-		<key>19E9C923-6BF6-4893-8598-253C0BFD20C5</key>
+		<key>099BE425-CA4C-4B10-B815-389B897C4F81</key>
 		<dict>
 			<key>xpos</key>
-			<real>485</real>
+			<real>475</real>
 			<key>ypos</key>
-			<real>1475</real>
+			<real>1420</real>
 		</dict>
-		<key>34D7608B-1105-470E-8353-62540A4D868D</key>
+		<key>3AD50E70-876B-4EDA-AEF0-65BAF669DE85</key>
 		<dict>
 			<key>xpos</key>
-			<real>485</real>
+			<real>475</real>
 			<key>ypos</key>
-			<real>1365</real>
+			<real>1315</real>
+		</dict>
+		<key>43900D53-A6C0-4FE0-A123-9D73D0C340B6</key>
+		<dict>
+			<key>xpos</key>
+			<real>475</real>
+			<key>ypos</key>
+			<real>1525</real>
 		</dict>
 		<key>524729A1-B788-43AA-85F1-8024C7D0FF1A</key>
 		<dict>
@@ -797,26 +933,12 @@
 			<key>ypos</key>
 			<real>1135</real>
 		</dict>
-		<key>8509B0F9-5113-4FC2-A48A-25CDC532749B</key>
-		<dict>
-			<key>xpos</key>
-			<real>485</real>
-			<key>ypos</key>
-			<real>1585</real>
-		</dict>
 		<key>893E3A54-8B75-4261-B82D-8DCE5D84D866</key>
 		<dict>
 			<key>xpos</key>
 			<real>485</real>
 			<key>ypos</key>
 			<real>395</real>
-		</dict>
-		<key>89BF2721-FC0E-469F-929E-4286B0E3721A</key>
-		<dict>
-			<key>xpos</key>
-			<real>485</real>
-			<key>ypos</key>
-			<real>1695</real>
 		</dict>
 		<key>8A586429-5545-44F2-AE0D-7C9923FE4D1C</key>
 		<dict>
@@ -832,12 +954,26 @@
 			<key>ypos</key>
 			<real>505</real>
 		</dict>
+		<key>A158C1D0-A374-41C4-A702-0E170193D3B5</key>
+		<dict>
+			<key>xpos</key>
+			<real>475</real>
+			<key>ypos</key>
+			<real>1210</real>
+		</dict>
 		<key>ABC862A0-EFB8-4048-9928-0C02C084B90A</key>
 		<dict>
 			<key>xpos</key>
 			<real>295</real>
 			<key>ypos</key>
 			<real>855</real>
+		</dict>
+		<key>C5D8616D-1AD5-4DAC-BFF0-2780F6B4BB39</key>
+		<dict>
+			<key>xpos</key>
+			<real>1220</real>
+			<key>ypos</key>
+			<real>1740</real>
 		</dict>
 		<key>C71EEEB4-1D48-4286-85B2-E4AED9A0C9B7</key>
 		<dict>
@@ -887,6 +1023,13 @@
 			<real>1070</real>
 			<key>ypos</key>
 			<real>1120</real>
+		</dict>
+		<key>F313644E-9D5D-48D9-BD4C-C0074F8B69B5</key>
+		<dict>
+			<key>xpos</key>
+			<real>985</real>
+			<key>ypos</key>
+			<real>1770</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
