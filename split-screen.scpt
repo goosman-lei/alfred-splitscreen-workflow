@@ -103,7 +103,7 @@ on run args
     else if positionType as string is equal to "l5.3" then
         set {percentX, percentY, percentW, percentH} to {15.00, 15.00, 70.00, 70.00}
     else if positionType as string is equal to "l5.4" then
-        set {percentX, percentY, percentW, percentH} to {0.23, 0.23, 0.70, 0.70}
+        set {percentX, percentY, percentW, percentH} to {22.50, 22.50, 70.00, 70.00}
     else if positionType as string is equal to "l5.5" then
         set {percentX, percentY, percentW, percentH} to {0.30, 0.30, 0.70, 0.70}
     else if positionType as string is equal to "r3.1" then

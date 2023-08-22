@@ -6,21 +6,16 @@ SCPT_FNAME="${SCRIPT_PATH}/split-screen.scpt"
 SCPT_TPL_FNAME="${SCRIPT_PATH}/split-screen.tpl"
 
 if [ "X$1" == "Xshow" ] ; then
-awk -F$'\t' -v "showWhere=$2" -v "filterPrefix=$3" -v NLine=$(wc -l "${CSV_FNAME}" | head -n 1 | awk '{print $1}') '
+awk -F$'\t' -v "showWhere=$2" -v "filterPrefix=$3" '
 BEGIN {
 	if (showWhere != "other" && showWhere != "main" && showWhere != "dual") {
 		showWhere = "current"
 	}
 	printf("{\"items\": [\n");
 }
-NF == 5 && NR < NLine {
+NF == 5 {
 	if (length(filterPrefix) == 0 || index($1, filterPrefix) > 0) {
-		printf("\t{\"arg\": [\"predefined\", \"%s\", \"%s\"], \"title\": \"%s\", \"subtitle\": \"%s\"},\n", showWhere, $1, $1, $1);
-	}
-}
-NR == NLine {
-	if (length(filterPrefix) == 0 || index($1, filterPrefix) > 0) {
-		printf("\t{\"arg\": [\"predefined\", \"%s\", \"%s\"], \"title\": \"%s\", \"subtitle\": \"%s\"},\n", showWhere, $1, $1, $1);
+		printf("\t{\"arg\": [\"predefined\", \"%s\", \"%s\"], \"title\": \"%s\", \"subtitle\": \"%s %s %s %s %s\"},\n", showWhere, $1, $1, $1, $2, $3, $4, $5);
 	}
 }
 END {
@@ -35,11 +30,18 @@ fi
 awk -F$'\t' -v "input_name=$1" -v "input_x=$2" -v "input_y=$3" -v "input_w=$4" -v "input_h=$5" '
 NF == 5 && !AlreadyPrinted[$1] {
 	if ($1 == input_name) {
-		printf("%s\t%s\t%s\t%s\t%s\n", input_name, input_x, input_y, input_w, input_h);
+        if (length(input_x) > 0) {
+            printf("%s\t%s\t%s\t%s\t%s\n", input_name, input_x, input_y, input_w, input_h);
+        }
 	} else {
 		printf("%s\n", $0);
 	}
 	AlreadyPrinted[$1] = 1
+}
+END {
+    if (!AlreadyPrinted[input_name] && length(input_x) > 0) {
+        printf("%s\t%s\t%s\t%s\t%s\n", input_name, input_x, input_y, input_w, input_h);
+    }
 }
 ' "${CSV_FNAME}" > "${CSV_TMP_FNAME}"
 mv "${SCRIPT_PATH}/split-screen.csv.tmp" "${SCRIPT_PATH}/split-screen.csv"
