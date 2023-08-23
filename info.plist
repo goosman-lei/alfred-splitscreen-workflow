@@ -8,6 +8,8 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
+		<key>036DE2BA-9893-47B9-996C-3A5E3DF8FB80</key>
+		<array/>
 		<key>099BE425-CA4C-4B10-B815-389B897C4F81</key>
 		<array>
 			<dict>
@@ -753,6 +755,55 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
+				<string>show</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./split-screen.sh show current {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>036DE2BA-9893-47B9-996C-3A5E3DF8FB80</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
 				<string>pm</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
@@ -884,6 +935,13 @@
 	<string>Split focused window in screen</string>
 	<key>uidata</key>
 	<dict>
+		<key>036DE2BA-9893-47B9-996C-3A5E3DF8FB80</key>
+		<dict>
+			<key>xpos</key>
+			<real>945</real>
+			<key>ypos</key>
+			<real>1405</real>
+		</dict>
 		<key>099BE425-CA4C-4B10-B815-389B897C4F81</key>
 		<dict>
 			<key>xpos</key>
@@ -971,9 +1029,9 @@
 		<key>C5D8616D-1AD5-4DAC-BFF0-2780F6B4BB39</key>
 		<dict>
 			<key>xpos</key>
-			<real>1220</real>
+			<real>915</real>
 			<key>ypos</key>
-			<real>1740</real>
+			<real>1570</real>
 		</dict>
 		<key>C71EEEB4-1D48-4286-85B2-E4AED9A0C9B7</key>
 		<dict>
@@ -1027,9 +1085,9 @@
 		<key>F313644E-9D5D-48D9-BD4C-C0074F8B69B5</key>
 		<dict>
 			<key>xpos</key>
-			<real>985</real>
+			<real>680</real>
 			<key>ypos</key>
-			<real>1770</real>
+			<real>1600</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

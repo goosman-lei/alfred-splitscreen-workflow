@@ -69,19 +69,39 @@ on run args
 
     -- 计算相对比例
     if positionType as string is equal to "left" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 0.48, 1.00}
+        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 49.00, 100.00}
     else if positionType as string is equal to "right" then
-        set {percentX, percentY, percentW, percentH} to {0.52, 0.00, 0.48, 1.00}
+        set {percentX, percentY, percentW, percentH} to {51.00, 0.00, 49.00, 100.00}
     else if positionType as string is equal to "top" then
         set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 1.00, 0.50}
     else if positionType as string is equal to "bottom" then
         set {percentX, percentY, percentW, percentH} to {0.00, 0.50, 1.00, 0.50}
     else if positionType as string is equal to "full" then
         set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 1.00, 1.00}
+    else if positionType as string is equal to "large" then
+        set {percentX, percentY, percentW, percentH} to {10.00, 10.00, 80.00, 80.00}
+    else if positionType as string is equal to "large.left" then
+        set {percentX, percentY, percentW, percentH} to {0.00, 10.00, 80.00, 80.00}
+    else if positionType as string is equal to "large.right" then
+        set {percentX, percentY, percentW, percentH} to {20.00, 10.00, 80.00, 80.00}
     else if positionType as string is equal to "medium" then
-        set {percentX, percentY, percentW, percentH} to {0.15, 0.10, 0.80, 0.80}
+        set {percentX, percentY, percentW, percentH} to {15.00, 15.00, 70.00, 70.00}
+    else if positionType as string is equal to "medium.left" then
+        set {percentX, percentY, percentW, percentH} to {0.00, 15.00, 70.00, 70.00}
+    else if positionType as string is equal to "medium.right" then
+        set {percentX, percentY, percentW, percentH} to {30.00, 15.00, 70.00, 70.00}
     else if positionType as string is equal to "small" then
-        set {percentX, percentY, percentW, percentH} to {0.20, 0.20, 0.60, 0.60}
+        set {percentX, percentY, percentW, percentH} to {20.00, 20.00, 60.00, 60.00}
+    else if positionType as string is equal to "small.left" then
+        set {percentX, percentY, percentW, percentH} to {0.00, 20.00, 60.00, 60.00}
+    else if positionType as string is equal to "small.right" then
+        set {percentX, percentY, percentW, percentH} to {40.00, 20.00, 60.00, 60.00}
+    else if positionType as string is equal to "tiny" then
+        set {percentX, percentY, percentW, percentH} to {25.00, 25.00, 50.00, 50.00}
+    else if positionType as string is equal to "tiny.left" then
+        set {percentX, percentY, percentW, percentH} to {0.00, 25.00, 50.00, 50.00}
+    else if positionType as string is equal to "tiny.right" then
+        set {percentX, percentY, percentW, percentH} to {50.00, 25.00, 50.00, 50.00}
     else if positionType as string is equal to "4.1" then
         set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 50.00, 50.00}
     else if positionType as string is equal to "4.2" then
@@ -122,6 +142,8 @@ on run args
         set {percentX, percentY, percentW, percentH} to {0.07, 0.23, 0.70, 0.70}
     else if positionType as string is equal to "r5.5" then
         set {percentX, percentY, percentW, percentH} to {0.00, 0.30, 0.70, 0.70}
+    else if positionType as string is equal to "8.2" then
+        set {percentX, percentY, percentW, percentH} to {50.00, 0.00, 50.00, 25.00}
     end if
 
     if whichScreen as string is equal to "current" then

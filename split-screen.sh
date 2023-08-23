@@ -14,7 +14,7 @@ BEGIN {
 	printf("{\"items\": [\n");
 }
 NF == 5 {
-	if (length(filterPrefix) == 0 || index($1, filterPrefix) > 0) {
+	if (length(filterPrefix) == 0 || match($1, filterPrefix) > 0) {
 		printf("\t{\"arg\": [\"predefined\", \"%s\", \"%s\"], \"title\": \"%s\", \"subtitle\": \"%s %s %s %s %s\"},\n", showWhere, $1, $1, $1, $2, $3, $4, $5);
 	}
 }
