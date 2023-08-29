@@ -1,19 +1,28 @@
 on resizeApp(positionX, positionY, sizeX, sizeY)
-  log "resize: x = " & positionX & ", y = " & positionY & ", width = " & sizeX & ", height = " & sizeY
+  log "input args: position = {" & positionX & ", " & positionY & "} size = {" & sizeX & ", " & sizeY & "}"
   tell application "System Events"
     tell first application process whose frontmost is true
         tell first window whose value of attribute "AXMain" is true
-            set {position, size} to {{positionX, positionY}, {sizeX, sizeY}}
+            if positionX is less than 0 or positionY is less than 0 then
+                set size to {sizeX, sizeY}
+            else if sizeX is less than 0 or sizeY is less than 0 then
+                set position to {positionX, positionY}
+            else
+                set {position, size} to {{positionX, positionY}, {sizeX, sizeY}}
+            end if
         end tell
-        -- set position of first window whose value of attribute "AXMain" is true to {positionX, positionY}
-        -- delay 0.2
-        -- set size of first window whose value of attribute "AXMain" is true to {sizeX, sizeY}
     end tell
     tell first application process whose frontmost is true
         set afterPosition to position of first window whose value of attribute "AXMain" is true
         set afterSize to size of first window whose value of attribute "AXMain" is true
-        log "after resize postion: " & item 1 of afterPosition & ", " & item 2 of afterPosition
-        log "after resize size: " & item 1 of afterSize & ", " & item 2 of afterSize
+        if positionX is less than 0 or positionY is less than 0 then
+            log "resize to: {" & item 1 of afterSize & ", " & item 2 of afterSize & "}"
+        else if sizeX is less than 0 or sizeY is less than 0 then
+            log "move to: {" & item 1 of afterPosition & ", " & item 2 of afterPosition & "}"
+        else
+            log "move to: {" & item 1 of afterPosition & ", " & item 2 of afterPosition & "}"
+            log "resize to: {" & item 1 of afterSize & ", " & item 2 of afterSize & "}"
+        end if
     end tell
   end tell
 end resizeApp
@@ -30,6 +39,18 @@ on run args
         set percentY to item 4 of args as real
         set percentW to item 5 of args as real
         set percentH to item 6 of args as real
+    else if command as string is equal to "resize" then
+        set positionType to ""
+        set percentX to -1
+        set percentY to -1
+        set percentW to item 3 of args as real
+        set percentH to item 4 of args as real
+    else if command as string is equal to "move" then
+        set positionType to ""
+        set percentX to item 3 of args as real
+        set percentY to item 4 of args as real
+        set percentW to -1
+        set percentH to -1
     end if
 
     tell application "Finder" to set screenBound to get bounds of window of desktop
@@ -121,5 +142,6 @@ on run args
         set newSizeW to mainScreenW * percentW
         set newSizeH to mainScreenH * percentH
     end if
+
     resizeApp(newSizeX as integer, newSizeY as integer, newSizeW as integer, newSizeH as integer)
 end run
