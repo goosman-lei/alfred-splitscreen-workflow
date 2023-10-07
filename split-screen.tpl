@@ -95,7 +95,8 @@ on run args
         tell application "System Events"
             tell first application process whose frontmost is true
                 set currPosition to position of first window whose value of attribute "AXMain" is true
-                if item 1 of currPosition < mainScreenW then
+                log "CurrentPosition: " & currPosition
+                if item 1 of currPosition <= mainScreenW then
                     set whichScreen to "main"
                 else
                     set whichScreen to "dual"
@@ -106,7 +107,8 @@ on run args
         tell application "System Events"
             tell first application process whose frontmost is true
                 set currPosition to position of first window whose value of attribute "AXMain" is true
-                if item 1 of currPosition <= mainScreenW then
+                log "CurrentPosition: " & currPosition
+                if item 1 of currPosition < mainScreenW then
                     set whichScreen to "dual"
                 else
                     set whichScreen to "main"
