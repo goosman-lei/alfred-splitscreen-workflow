@@ -62,31 +62,20 @@ on run args
     set screenBoundH to item 4 of screenBound
 
     -- 获取屏幕大小
-    set numOfScreen to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | wc -l | awk '{print $1}'") as integer
-    if numOfScreen <= 1 then
-        set mainScreenX to 0
-        set mainScreenY to 0
-        set mainScreenW to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==1{print $2}'") as integer
-        set mainScreenH to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==1{print $4}'") as integer
-        set dualScreenX to 0
-        set dualScreenY to 0
-        set dualScreenW to mainScreenW
-        set dualScreenH to mainScreenH
-    else
-        set mainScreenX to 0
-        set mainScreenY to 0
-        set mainScreenW to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==1{print $2}'") as integer
-        set mainScreenH to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==1{print $4}'") as integer
-        set dualScreenX to mainScreenW
-        set dualScreenY to screenBoundY
-        set dualScreenW to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==2{print $2}'") as integer
-        set dualScreenH to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==2{print $4}'") as integer
-    end if
+    set screenResolutionInfo to words of (do shell script "displayplacer list | awk -f split-screen.awk")
+    set mainScreenX to (item 1 of screenResolutionInfo) as integer
+    set mainScreenY to (item 2 of screenResolutionInfo) as integer
+    set mainScreenW to (item 3 of screenResolutionInfo) as integer
+    set mainScreenH to (item 4 of screenResolutionInfo) as integer
+    set dualScreenX to (item 5 of screenResolutionInfo) as integer
+    set dualScreenY to (item 6 of screenResolutionInfo) as integer
+    set dualScreenW to (item 7 of screenResolutionInfo) as integer
+    set dualScreenH to (item 8 of screenResolutionInfo) as integer
 
     log "---- bounds position & size"
     log "globalScreenBound: " & screenBoundX & ", " & screenBoundY & ", " & screenBoundW & ", " & screenBoundH
-    log "mainScreenSize: " & mainScreenW & ", " & mainScreenH
-    log "dualScreenSize: " & dualScreenW & ", " & dualScreenH
+    log "mainScreenBound: " & mainScreenX & ", " & mainScreenY & ", " & mainScreenW & ", " & mainScreenH
+    log "dualScreenBound: " & dualScreenX & ", " & dualScreenY & ", " & dualScreenW & ", " & dualScreenH
 
     -- height of menubar
     set heightOfMenubar to 25
@@ -98,7 +87,6 @@ on run args
     log "---- actual position & size"
     log "ActualMainBound: " & mainScreenX & ", " & mainScreenY & ", " & mainScreenW & ", " & mainScreenH
     log "ActualDualBound: " & dualScreenX & ", " & dualScreenY & ", " & dualScreenW & ", " & dualScreenH
-
 
     -- 计算相对比例
 ----TPL_REPLACE_WITH_CONFIG
