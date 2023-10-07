@@ -3,11 +3,13 @@ on resizeApp(positionX, positionY, sizeX, sizeY)
   tell application "System Events"
     tell first application process whose frontmost is true
         tell first window whose value of attribute "AXMain" is true
-            if positionX is less than 0 or positionY is less than 0 then
+            if positionX is equal to -999999 or positionY is equal to -999999 then
                 set size to {sizeX, sizeY}
-            else if sizeX is less than 0 or sizeY is less than 0 then
+            else if sizeX is equal to -999999 or sizeY is equal to -999999 then
                 set position to {positionX, positionY}
             else
+                set {position, size} to {{positionX, positionY}, {sizeX, sizeY}}
+                delay 0.05
                 set {position, size} to {{positionX, positionY}, {sizeX, sizeY}}
             end if
         end tell
@@ -15,9 +17,9 @@ on resizeApp(positionX, positionY, sizeX, sizeY)
     tell first application process whose frontmost is true
         set afterPosition to position of first window whose value of attribute "AXMain" is true
         set afterSize to size of first window whose value of attribute "AXMain" is true
-        if positionX is less than 0 or positionY is less than 0 then
+        if positionX is equal to -999999 or positionY is equal to -999999 then
             log "resize to: {" & item 1 of afterSize & ", " & item 2 of afterSize & "}"
-        else if sizeX is less than 0 or sizeY is less than 0 then
+        else if sizeX is equal to -999999 or sizeY is equal to -999999 then
             log "move to: {" & item 1 of afterPosition & ", " & item 2 of afterPosition & "}"
         else
             log "move to: {" & item 1 of afterPosition & ", " & item 2 of afterPosition & "}"
@@ -28,8 +30,7 @@ on resizeApp(positionX, positionY, sizeX, sizeY)
 end resizeApp
 
 on run args
-    set widthOfMainScreen to 2560
-    set heightOfMainScreen to 1600
+    -- 处理比例数据
     set command to item 1 of args as string
     set whichScreen to item 2 of args as string
     set positionType to item 3 of args as string
@@ -41,52 +42,63 @@ on run args
         set percentH to item 6 of args as real
     else if command as string is equal to "resize" then
         set positionType to ""
-        set percentX to -1
-        set percentY to -1
+        set percentX to -999999
+        set percentY to -999999
         set percentW to item 3 of args as real
         set percentH to item 4 of args as real
     else if command as string is equal to "move" then
         set positionType to ""
         set percentX to item 3 of args as real
         set percentY to item 4 of args as real
-        set percentW to -1
-        set percentH to -1
+        set percentW to -999999
+        set percentH to -999999
     end if
 
+    -- 获取屏幕边界坐标
     tell application "Finder" to set screenBound to get bounds of window of desktop
     set screenBoundX to item 1 of screenBound
     set screenBoundY to item 2 of screenBound
     set screenBoundW to item 3 of screenBound
     set screenBoundH to item 4 of screenBound
-    if widthOfMainScreen = screenBoundW then -- 只有一个屏幕
+
+    -- 获取屏幕大小
+    set numOfScreen to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | wc -l | awk '{print $1}'") as integer
+    if numOfScreen <= 1 then
         set mainScreenX to 0
         set mainScreenY to 0
-        set mainScreenW to widthOfMainScreen
-        set mainScreenH to heightOfMainScreen
+        set mainScreenW to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==1{print $2}'") as integer
+        set mainScreenH to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==1{print $4}'") as integer
         set dualScreenX to 0
         set dualScreenY to 0
-        set dualScreenW to widthOfMainScreen
-        set dualScreenH to heightOfMainScreen
+        set dualScreenW to mainScreenW
+        set dualScreenH to mainScreenH
     else
         set mainScreenX to 0
         set mainScreenY to 0
-        set mainScreenW to widthOfMainScreen
-        set mainScreenH to heightOfMainScreen
+        set mainScreenW to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==1{print $2}'") as integer
+        set mainScreenH to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==1{print $4}'") as integer
         set dualScreenX to mainScreenW
         set dualScreenY to screenBoundY
-        -- set dualScreenW to screenBoundW - mainScreenW
-        -- set dualScreenH to screenBoundH - screenBoundY
-        set dualScreenW to (do shell script "system_profiler SPDisplaysDataType | ggrep -oP '(?<=Resolution: )\\d++ x \\d++(?! Retina)' | awk '{print $1}'") as integer
-        set dualScreenH to (do shell script "system_profiler SPDisplaysDataType | ggrep -oP '(?<=Resolution: )\\d++ x \\d++(?! Retina)' | awk '{print $3}'") as integer
+        set dualScreenW to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==2{print $2}'") as integer
+        set dualScreenH to (do shell script "system_profiler SPDisplaysDataType | grep Resolution | awk 'NR==2{print $4}'") as integer
     end if
-    log "whichScreen: " & whichScreen & ", positionType: " & positionType
-    log "mainBound: " & mainScreenX & ", " & mainScreenY & ", " & mainScreenW & ", " & mainScreenH
-    log "dualBound: " & dualScreenX & ", " & dualScreenY & ", " & dualScreenW & ", " & dualScreenH
+
+    log "---- bounds position & size"
+    log "globalScreenBound: " & screenBoundX & ", " & screenBoundY & ", " & screenBoundW & ", " & screenBoundH
+    log "mainScreenSize: " & mainScreenW & ", " & mainScreenH
+    log "dualScreenSize: " & dualScreenW & ", " & dualScreenH
 
     -- height of menubar
     set heightOfMenubar to 25
     set mainScreenY to mainScreenY + heightOfMenubar
     set dualScreenY to dualScreenY + heightOfMenubar
+    set mainScreenH to mainScreenH - heightOfMenubar
+    set dualScreenH to dualScreenH - heightOfMenubar
+
+    log "---- actual position & size"
+    log "ActualMainBound: " & mainScreenX & ", " & mainScreenY & ", " & mainScreenW & ", " & mainScreenH
+    log "ActualDualBound: " & dualScreenX & ", " & dualScreenY & ", " & dualScreenW & ", " & dualScreenH
+
 
     -- 计算相对比例
 ----TPL_REPLACE_WITH_CONFIG
@@ -95,7 +107,7 @@ on run args
         tell application "System Events"
             tell first application process whose frontmost is true
                 set currPosition to position of first window whose value of attribute "AXMain" is true
-                if item 1 of currPosition < widthOfMainScreen then
+                if item 1 of currPosition < mainScreenW then
                     set whichScreen to "main"
                 else
                     set whichScreen to "dual"
@@ -106,7 +118,7 @@ on run args
         tell application "System Events"
             tell first application process whose frontmost is true
                 set currPosition to position of first window whose value of attribute "AXMain" is true
-                if item 1 of currPosition <= widthOfMainScreen then
+                if item 1 of currPosition <= mainScreenW then
                     set whichScreen to "dual"
                 else
                     set whichScreen to "main"
@@ -129,19 +141,52 @@ on run args
         set percentH to percentH / 100
     end if
 
-
     -- 计算实际位置大小
     if whichScreen as string is equal to "dual" then
-        set newSizeX to dualScreenW * percentX + dualScreenX
-        set newSizeY to dualScreenH * percentY + dualScreenY
-        set newSizeW to dualScreenW * percentW
-        set newSizeH to dualScreenH * percentH
+        if percentX is equal to -999999 then
+            set newSizeX to -999999
+        else
+            set newSizeX to dualScreenW * percentX + dualScreenX
+        end if
+        if percentY is equal to -999999 then
+            set newSizeY to -999999
+        else
+            set newSizeY to dualScreenH * percentY + dualScreenY
+        end if
+        if percentW is equal to -999999 then
+            set newSizeW to -999999
+        else
+            set newSizeW to dualScreenW * percentW
+        end if
+        if percentH is equal to -999999 then
+            set newSizeH to -999999
+        else
+            set newSizeH to dualScreenH * percentH
+        end if
     else
-        set newSizeX to mainScreenW * percentX
-        set newSizeY to mainScreenH * percentY
-        set newSizeW to mainScreenW * percentW
-        set newSizeH to mainScreenH * percentH
+        if percentX is equal to -999999 then
+            set newSizeX to -999999
+        else
+            set newSizeX to mainScreenW * percentX + mainScreenX
+        end if
+        if percentY is equal to -999999 then
+            set newSizeY to -999999
+        else
+            set newSizeY to mainScreenH * percentY + mainScreenY
+        end if
+        if percentW is equal to -999999 then
+            set newSizeW to -999999
+        else
+            set newSizeW to mainScreenW * percentW
+        end if
+        if percentH is equal to -999999 then
+            set newSizeH to -999999
+        else
+            set newSizeH to mainScreenH * percentH
+        end if
     end if
 
+    log "---- action"
+    log "command = " & command & "; whichScreen = " & whichScreen & "; positionType = " & positionType
     resizeApp(newSizeX as integer, newSizeY as integer, newSizeW as integer, newSizeH as integer)
 end run
