@@ -815,11 +815,11 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>show</string>
+				<string>pshow</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -837,9 +837,9 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>pshow predefined-name</string>
 				<key>title</key>
-				<string></string>
+				<string>pshow predefined-name</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -979,11 +979,11 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>def</string>
+				<string>pdef</string>
 				<key>subtext</key>
-				<string></string>
+				<string>pdef name x y w h</string>
 				<key>text</key>
-				<string></string>
+				<string>defined new split-screen config</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
