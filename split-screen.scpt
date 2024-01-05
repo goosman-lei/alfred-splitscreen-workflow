@@ -124,85 +124,59 @@ on run args
     else if positionType as string is equal to "tiny.right" then
         set {percentX, percentY, percentW, percentH} to {50.00, 25.00, 50.00, 50.00}
     else if positionType as string is equal to "1/4" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 50.00, 50.00}
+        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 49.00, 49.00}
     else if positionType as string is equal to "2/4" then
-        set {percentX, percentY, percentW, percentH} to {50.00, 0.00, 50.00, 50.00}
+        set {percentX, percentY, percentW, percentH} to {51.00, 0.00, 49.00, 49.00}
     else if positionType as string is equal to "3/4" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 50.00, 50.00, 50.00}
+        set {percentX, percentY, percentW, percentH} to {0.00, 51.00, 49.00, 49.00}
     else if positionType as string is equal to "4/4" then
-        set {percentX, percentY, percentW, percentH} to {50.00, 50.00, 50.00, 50.00}
-    else if positionType as string is equal to "4.1" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 70.00, 70.00}
-    else if positionType as string is equal to "4.2" then
-        set {percentX, percentY, percentW, percentH} to {10.00, 10.00, 70.00, 70.00}
-    else if positionType as string is equal to "4.3" then
-        set {percentX, percentY, percentW, percentH} to {20.00, 20.00, 70.00, 70.00}
-    else if positionType as string is equal to "4.4" then
-        set {percentX, percentY, percentW, percentH} to {30.00, 30.00, 70.00, 70.00}
+        set {percentX, percentY, percentW, percentH} to {51.00, 51.00, 49.00, 49.00}
     else if positionType as string is equal to "3.1" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 80.00, 80.00}
+        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 90.00, 90.00}
     else if positionType as string is equal to "3.2" then
-        set {percentX, percentY, percentW, percentH} to {10.00, 10.00, 80.00, 80.00}
+        set {percentX, percentY, percentW, percentH} to {5.00, 5.00, 90.00, 90.00}
     else if positionType as string is equal to "3.3" then
-        set {percentX, percentY, percentW, percentH} to {20.00, 20.00, 80.00, 80.00}
+        set {percentX, percentY, percentW, percentH} to {10.00, 10.00, 90.00, 90.00}
+    else if positionType as string is equal to "4.1" then
+        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 85.00, 85.00}
+    else if positionType as string is equal to "4.2" then
+        set {percentX, percentY, percentW, percentH} to {5.00, 5.00, 85.00, 85.00}
+    else if positionType as string is equal to "4.3" then
+        set {percentX, percentY, percentW, percentH} to {15.00, 15.00, 85.00, 85.00}
+    else if positionType as string is equal to "4.4" then
+        set {percentX, percentY, percentW, percentH} to {20.00, 20.00, 85.00, 85.00}
     else if positionType as string is equal to "5.1" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 72.00, 72.00}
+        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 80.00, 80.00}
     else if positionType as string is equal to "5.2" then
-        set {percentX, percentY, percentW, percentH} to {7.00, 7.00, 72.00, 72.00}
+        set {percentX, percentY, percentW, percentH} to {5.00, 5.00, 80.00, 80.00}
     else if positionType as string is equal to "5.3" then
-        set {percentX, percentY, percentW, percentH} to {14.00, 14.00, 72.00, 72.00}
-    else if positionType as string is equal to "5.4" then
-        set {percentX, percentY, percentW, percentH} to {21.00, 21.00, 72.00, 72.00}
-    else if positionType as string is equal to "5.5" then
-        set {percentX, percentY, percentW, percentH} to {28.00, 28.00, 72.00, 72.00}
-    else if positionType as string is equal to "7.1" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 64.00, 64.00}
-    else if positionType as string is equal to "7.2" then
-        set {percentX, percentY, percentW, percentH} to {6.00, 6.00, 64.00, 64.00}
-    else if positionType as string is equal to "7.3" then
-        set {percentX, percentY, percentW, percentH} to {12.00, 12.00, 64.00, 64.00}
-    else if positionType as string is equal to "7.4" then
-        set {percentX, percentY, percentW, percentH} to {18.00, 18.00, 64.00, 64.00}
-    else if positionType as string is equal to "7.5" then
-        set {percentX, percentY, percentW, percentH} to {24.00, 24.00, 64.00, 64.00}
-    else if positionType as string is equal to "7.6" then
-        set {percentX, percentY, percentW, percentH} to {30.00, 30.00, 64.00, 64.00}
-    else if positionType as string is equal to "7.7" then
-        set {percentX, percentY, percentW, percentH} to {36.00, 36.00, 64.00, 64.00}
-    else if positionType as string is equal to "r3.1" then
-        set {percentX, percentY, percentW, percentH} to {20.00, 0.00, 80.00, 80.00}
-    else if positionType as string is equal to "r3.2" then
         set {percentX, percentY, percentW, percentH} to {10.00, 10.00, 80.00, 80.00}
-    else if positionType as string is equal to "r3.3" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 20.00, 80.00, 80.00}
-    else if positionType as string is equal to "r5.1" then
-        set {percentX, percentY, percentW, percentH} to {30.00, 0.00, 70.00, 70.00}
-    else if positionType as string is equal to "r5.2" then
-        set {percentX, percentY, percentW, percentH} to {0.23, 0.07, 0.70, 0.70}
-    else if positionType as string is equal to "r5.3" then
-        set {percentX, percentY, percentW, percentH} to {0.15, 0.15, 0.70, 0.70}
-    else if positionType as string is equal to "r5.4" then
-        set {percentX, percentY, percentW, percentH} to {0.07, 0.23, 0.70, 0.70}
-    else if positionType as string is equal to "r5.5" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 30.00, 70.00, 70.00}
-    else if positionType as string is equal to "r7.3" then
-        set {percentX, percentY, percentW, percentH} to {24.00, 12.00, 64.00, 64.00}
-    else if positionType as string is equal to "r7.4" then
-        set {percentX, percentY, percentW, percentH} to {18.00, 18.00, 64.00, 64.00}
-    else if positionType as string is equal to "r7.5" then
-        set {percentX, percentY, percentW, percentH} to {12.00, 24.00, 64.00, 64.00}
-    else if positionType as string is equal to "r7.6" then
-        set {percentX, percentY, percentW, percentH} to {6.00, 30.00, 64.00, 64.00}
-    else if positionType as string is equal to "r7.7" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 36.00, 64.00, 64.00}
+    else if positionType as string is equal to "5.4" then
+        set {percentX, percentY, percentW, percentH} to {15.00, 15.00, 80.00, 80.00}
+    else if positionType as string is equal to "5.5" then
+        set {percentX, percentY, percentW, percentH} to {20.00, 20.00, 80.00, 80.00}
+    else if positionType as string is equal to "7.1" then
+        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 70.00, 70.00}
+    else if positionType as string is equal to "7.2" then
+        set {percentX, percentY, percentW, percentH} to {5.00, 5.00, 70.00, 70.00}
+    else if positionType as string is equal to "7.3" then
+        set {percentX, percentY, percentW, percentH} to {10.00, 10.00, 70.00, 70.00}
+    else if positionType as string is equal to "7.4" then
+        set {percentX, percentY, percentW, percentH} to {15.00, 15.00, 70.00, 70.00}
+    else if positionType as string is equal to "7.5" then
+        set {percentX, percentY, percentW, percentH} to {20.00, 20.00, 70.00, 70.00}
+    else if positionType as string is equal to "7.6" then
+        set {percentX, percentY, percentW, percentH} to {25.00, 25.00, 70.00, 70.00}
+    else if positionType as string is equal to "7.7" then
+        set {percentX, percentY, percentW, percentH} to {30.00, 30.00, 70.00, 70.00}
     else if positionType as string is equal to "omnifocus" then
-        set {percentX, percentY, percentW, percentH} to {60.00, 0.00, 40.00, 30.00}
-    else if positionType as string is equal to "talk" then
-        set {percentX, percentY, percentW, percentH} to {0.00, 60.00, 40.00, 40.00}
+        set {percentX, percentY, percentW, percentH} to {70.00, 0.00, 30.00, 20.00}
     else if positionType as string is equal to "huge" then
         set {percentX, percentY, percentW, percentH} to {5.00, 5.00, 90.00, 90.00}
     else if positionType as string is equal to "mini" then
         set {percentX, percentY, percentW, percentH} to {32.50, 32.50, 35.00, 35.00}
+    else if positionType as string is equal to "wechat" then
+        set {percentX, percentY, percentW, percentH} to {0.00, 0.00, 50.00, 50.00}
     end if
 
     if whichScreen as string is equal to "current" then
