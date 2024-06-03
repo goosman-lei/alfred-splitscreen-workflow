@@ -30,6 +30,13 @@ on resizeApp(positionX, positionY, sizeX, sizeY)
 end resizeApp
 
 on run args
+    -- 打印命令行参数
+    set argsString to "Args: "
+    repeat with theArg in args
+        set argsString to argsString & theArg & " "
+    end repeat
+    log argsString
+
     -- 处理比例数据
     set command to item 1 of args as string
     set whichScreen to item 2 of args as string
@@ -62,7 +69,7 @@ on run args
     set screenBoundH to item 4 of screenBound
 
     -- 获取屏幕大小
-    set screenResolutionInfo to words of (do shell script "displayplacer list | awk -f split-screen.awk")
+    set screenResolutionInfo to paragraphs of (do shell script "displayplacer list | awk -f split-screen.awk")
     set mainScreenX to (item 1 of screenResolutionInfo) as integer
     set mainScreenY to (item 2 of screenResolutionInfo) as integer
     set mainScreenW to (item 3 of screenResolutionInfo) as integer
